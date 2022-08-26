@@ -1707,7 +1707,6 @@
         background-size: cover;
         background-position: center;
         height: 100vh;
-        border: 2px solid red;
         display: flex;
         align-items: center;
         justify-content: center;
@@ -1729,6 +1728,7 @@
         animation-duration: 3s;
         animation-iteration-count: infinite;
         animation-direction: alternate;
+        z-index: 1;
     }
     @keyframes heroImg {
         to{
@@ -1741,7 +1741,7 @@
         position: absolute;
         height: 50%;
         width: 200px;
-        top: 45%;
+        top: 40%;
         display: flex;
         align-items: center;
         justify-content: center;
@@ -1911,38 +1911,51 @@
     /* =======================About-Section======================= */
 
     .about-section{
-        height: 100vh;
+        position: relative;
+        height: 755px;
+        width: 100vW;
         display: flex;
         align-items: center;
         justify-content: center;
+        margin-top:-30px ;
+
+
+
     }
     .about-area{
-        position: relative;
-        height: 100%;
-        width: 90%;
+        position: absolute;
+        top: 0;
+        height: 50%;
+        width: 100%;
         display: flex;
         align-items: center;
-        justify-content: space-between;
-
+        justify-content: center;
+        flex-direction: column;
     }
-
-    .about-content{
-        position: relative;
-        height: 60%;
+    #about-content{
+        width: 100%;
         display: flex;
-        justify-content: left;
-        /* // box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19); */
+        text-align: center;
     }
+    #skill-content{
+        width: 100%;
+        top: 350px;
+    }
+
     .about-content>a{
         position: absolute;
-        top: 100%;
+        top: 90%;
+        width: 50%;
         border:2px solid #0c63e4;
         padding:10px 40px;
         font-family: 'Lexend', sans-serif;
-        font-size: 1rem;
+        font-size: 0.6rem;
         text-decoration: none;
         color: #0c63e4;
         transition: 0.5s;
+        left: 0;
+        right: 0;
+        margin: auto;
     }
     .about-content>a:hover{
         background-color:#0c63e4 ;
@@ -1951,17 +1964,19 @@
     .social-img-container{
         position: absolute;
         height: 15%;
-        width: 50%;
-        top: 75%;
+        width: 60%;
+        top: 60%;
+        left: 0;
+        right: 0;
+        margin: auto;
         display: flex;
         align-items: center;
         justify-content: space-between;
     }
     .social-img-container>div{
-        width: 50px;
-        height: 50px;
+        width: 30px;
+        height: 30px;
         border-radius: 50%;
-
         background-color: #1d45f1;
         display: flex;
         align-items: center;
@@ -1974,9 +1989,8 @@
 
 
     .skill-content{
-        position: relative;
+        position: absolute;
         height: 70%;
-
     }
     #skill-topic{
         position: absolute;
@@ -1984,6 +1998,9 @@
         font-size: 2rem;
         top: 9%;
         padding: 0;
+        left: 0;
+        right: 0;
+        margin: auto;
         font-family: 'Lexend', sans-serif;
     }
     .skill-bar{
@@ -1995,31 +2012,37 @@
 
 
     .about-content>h1{
+        position: absolute;
         text-align: center;
-        font-size: 2rem;
-        padding: 0;
+        font-size: 1.5rem;
+        top: -40px;
+        left: 0;
+        right: 0;
+        margin: auto;
+
+
         font-family: 'Lexend', sans-serif;
     }
 
     .about-content>p{
-        color: rgb(63, 62, 62);
-        top: 23%;
         position: absolute;
         color: #726969;
-        /*font-family: 'Concert One', cursive;*/
-        left: 0;
-        padding-left: 3%;
-        padding-right: 30%;
         font-size: 0.7em;
-        text-align: left;
+        text-align: center;
+        padding: 10px;
+        top: 0px;
+        left: 0;
+        right: 0;
+        margin: auto;
         font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     }
 
     .skill-content li{
+
         list-style: none;
 
-
     }
+
     .skill-content li h3{
         font-size: 0.8em;
         font-weight: 400;
@@ -2409,6 +2432,7 @@
         font-size: 1rem;
 
     }
+
 }
 
 @media all and (max-width: 374px) and (min-width: 320px) {
