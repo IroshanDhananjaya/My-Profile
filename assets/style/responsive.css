@@ -838,7 +838,7 @@
 @media all and (max-width: 766px) and (min-width: 425px) {
     header{
         position: fixed;
-        z-index: 1;
+        z-index: 4;
         width:98.8vw;
         height: 70px;
         background-color: #ffffff;
@@ -1337,28 +1337,45 @@
     /* =======================Skill-Section======================= */
     .countDown{
         position: relative;
-        height: 35vh;
+        height: 50vh;
         display: flex;
         align-items: center;
         justify-content: center;
+        flex-direction: row;
         margin-top: 30px;
         color: rgba(84, 83, 83, 0.63);
 
     }
+    #countDown{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+    }
     .countDown>div{
         height: 100%;
-        width: 30%;
+        width: 90%;
         display: flex;
         align-items: center;
         justify-content: center;
         flex-direction: column;
         font-family: 'Lexend', sans-serif;
+        margin: 20px;
     }
     .countDown>div:nth-child(1){
         border-right: 2px solid  rgba(84, 83, 83, 0.63);
+        border-left: 2px solid  rgba(84, 83, 83, 0.63);
     }
     .countDown>div:nth-child(2){
         border-right: 2px solid  rgba(84, 83, 83, 0.63);
+        border-left: 2px solid  rgba(84, 83, 83, 0.63);
+    }
+    .countDown>div:nth-child(3){
+        border-right: 2px solid  rgba(84, 83, 83, 0.63);
+        border-left: 2px solid  rgba(84, 83, 83, 0.63);
+    }
+    .countDown h2{
+        font-size: 1.5rem;
     }
 
 
@@ -1638,7 +1655,7 @@
 @media all and (max-width: 424px) and (min-width: 375px) {
     header{
         position: fixed;
-        z-index: 1;
+        z-index: 2;
         width:98.8vw;
         height: 70px;
         background-color: #ffffff;
@@ -2138,28 +2155,45 @@
     /* =======================Skill-Section======================= */
     .countDown{
         position: relative;
-        height: 35vh;
+        height: 50vh;
         display: flex;
         align-items: center;
         justify-content: center;
+        flex-direction: row;
         margin-top: 30px;
         color: rgba(84, 83, 83, 0.63);
 
     }
+    #countDown{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+    }
     .countDown>div{
         height: 100%;
-        width: 30%;
+        width: 90%;
         display: flex;
         align-items: center;
         justify-content: center;
         flex-direction: column;
         font-family: 'Lexend', sans-serif;
+        margin: 20px;
     }
     .countDown>div:nth-child(1){
         border-right: 2px solid  rgba(84, 83, 83, 0.63);
+        border-left: 2px solid  rgba(84, 83, 83, 0.63);
     }
     .countDown>div:nth-child(2){
         border-right: 2px solid  rgba(84, 83, 83, 0.63);
+        border-left: 2px solid  rgba(84, 83, 83, 0.63);
+    }
+    .countDown>div:nth-child(3){
+        border-right: 2px solid  rgba(84, 83, 83, 0.63);
+        border-left: 2px solid  rgba(84, 83, 83, 0.63);
+    }
+    .countDown h2{
+        font-size: 1.5rem;
     }
 
 
