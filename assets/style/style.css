@@ -9,12 +9,13 @@
 @import url('https://fonts.googleapis.com/css2?family=Concert+One&family=Lexend:wght@900&family=Saira:wght@800&display=swap');
 header{
     position: fixed;
-    z-index: 1;
+
     width:98.8vw;
     height: 70px;
     background-color: #ffffff;
     display: flex;
     font-family: 'Lexend', sans-serif;
+    z-index: 4;
 }
 
 .menu-icon-container{
